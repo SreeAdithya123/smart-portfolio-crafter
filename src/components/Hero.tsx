@@ -16,11 +16,11 @@ export const Hero = () => {
               Build Your Future
             </span>
           </div>
-          <h1 className="h1 mb-6 animate-in" style={{ animationDelay: "0.1s" }}>
+          <h1 className="h1 mb-6 animate-in text-shadow-glow" style={{ animationDelay: "0.1s" }}>
             Craft Your Digital Identity
           </h1>
           <p
-            className="p-large mb-8 animate-in"
+            className="p-large mb-8 animate-in text-shadow-sm"
             style={{ animationDelay: "0.2s" }}
           >
             Create a next-generation resume that stands out. Our AI-powered platform helps you
