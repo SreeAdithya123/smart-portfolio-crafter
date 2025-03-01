@@ -13,32 +13,32 @@ interface ResumePreviewProps {
 
 export const ResumePreview = ({ data }: ResumePreviewProps) => {
   return (
-    <Card className="p-8 glass-card animate-in print:shadow-none">
+    <Card className="p-8 glass-card shadow-lg animate-in print:shadow-none">
       <div className="max-w-2xl mx-auto space-y-8">
-        <div className="text-center">
-          <h1 className="text-3xl font-display font-semibold mb-2">{data.fullName || "Your Name"}</h1>
+        <div className="text-center border-b pb-6">
+          <h1 className="text-4xl font-display font-semibold mb-3">{data.fullName || "Your Name"}</h1>
           <p className="text-gray-600">{data.email || "your.email@example.com"}</p>
         </div>
 
         <div>
-          <h2 className="text-xl font-display font-semibold mb-4 pb-2 border-b">Skills</h2>
-          <p className="text-gray-600">
-            {data.skills || "List your skills here..."}
+          <h2 className="text-2xl font-display font-semibold mb-4 pb-2 border-b text-primary">Skills</h2>
+          <p className="text-gray-600 leading-relaxed">
+            {data.skills || "List your key skills and competencies..."}
           </p>
         </div>
 
         <div>
-          <h2 className="text-xl font-display font-semibold mb-4 pb-2 border-b">Experience</h2>
-          <p className="text-gray-600 whitespace-pre-line">
-            {data.experience || "Describe your work experience..."}
-          </p>
+          <h2 className="text-2xl font-display font-semibold mb-4 pb-2 border-b text-primary">Experience</h2>
+          <div className="text-gray-600 whitespace-pre-line leading-relaxed">
+            {data.experience || "Describe your professional experience..."}
+          </div>
         </div>
 
         <div>
-          <h2 className="text-xl font-display font-semibold mb-4 pb-2 border-b">Education</h2>
-          <p className="text-gray-600 whitespace-pre-line">
+          <h2 className="text-2xl font-display font-semibold mb-4 pb-2 border-b text-primary">Education</h2>
+          <div className="text-gray-600 whitespace-pre-line leading-relaxed">
             {data.education || "List your educational background..."}
-          </p>
+          </div>
         </div>
       </div>
     </Card>

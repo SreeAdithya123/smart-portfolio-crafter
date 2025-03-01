@@ -18,14 +18,14 @@ const Index = () => {
       <Hero />
       
       <div className="container px-4 mx-auto py-16">
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <h2 className="h2">Create Your Resume</h2>
+            <h2 className="h2 text-primary">Build Your Resume</h2>
             <ResumeForm />
           </div>
           
           <div className="space-y-6">
-            <h2 className="h2">Preview</h2>
+            <h2 className="h2 text-primary">Preview</h2>
             <ResumePreview data={resumeData} />
           </div>
         </div>
